@@ -15,21 +15,18 @@ import io.swagger.client.core.ApiModel
 import org.joda.time.DateTime
 import java.util.UUID
 
-case class BankStatementLine (
+case class BankAccount (
   id: Option[Long] = None,
-  name: Option[String] = None,
-  date: Option[Date] = None,
-  amount: Option[Double] = None,
-  note: Option[String] = None,
-  createdAt: Option[String] = None,
-  updatedAt: Option[String] = None,
-  bankStatement: Option[Bank20Statement] = None,
-  currency: Option[Currency] = None,
-  bankAccount: Option[BankAccount] = None,
-  journal: Option[Journal] = None,
-  company: Option[Company] = None,
-  transactionLine: Option[TransactionLine] = None,
-  account: Option[Account] = None
+  accountNumber: Option[Long] = None,
+  bankBic: Option[String] = None,
+  ownerName: Option[String] = None,
+  bankName: Option[String] = None,
+  state: Option[String] = None,
+  createdAt: Option[Date] = None,
+  updatedAt: Option[Date] = None,
+  bank: Option[Bank] = None,
+  partner: Option[Partner] = None,
+  company: Option[Company] = None
 ) extends ApiModel
 
 
