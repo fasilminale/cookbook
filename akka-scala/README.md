@@ -114,6 +114,7 @@ Class | Method | HTTP request | Description
  - [TrialBalanceReport](TrialBalanceReport.md)
  - [User](User.md)
  - [Voucher](Voucher.md)
+ - [VoucherLine](VoucherLine.md)
 
 
 ## Documentation for Authorization
