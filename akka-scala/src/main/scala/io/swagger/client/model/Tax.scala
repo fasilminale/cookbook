@@ -16,7 +16,8 @@ import org.joda.time.DateTime
 import java.util.UUID
 
 case class Tax (
-  id: Option[Long] = None
+  id: Option[Long] = None,
+  name: Option[String] = None
 ) extends ApiModel
 
 
