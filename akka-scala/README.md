@@ -92,7 +92,6 @@ Class | Method | HTTP request | Description
  - [AssetCategory](AssetCategory.md)
  - [Bank](Bank.md)
  - [BankStatement](BankStatement.md)
- - [BankStatementLine](BankStatementLine.md)
  - [Company](Company.md)
  - [Country](Country.md)
  - [Currency](Currency.md)
