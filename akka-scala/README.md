@@ -102,6 +102,7 @@ Class | Method | HTTP request | Description
  - [GeneralLedgerReport](GeneralLedgerReport.md)
  - [Invoice](Invoice.md)
  - [InvoiceLine](InvoiceLine.md)
+ - [InvoiceTax](InvoiceTax.md)
  - [Journal](Journal.md)
  - [Partner](Partner.md)
  - [PaymentTerm](PaymentTerm.md)
