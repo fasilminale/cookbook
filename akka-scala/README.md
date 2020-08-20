@@ -108,6 +108,7 @@ Class | Method | HTTP request | Description
  - [Period](Period.md)
  - [State](State.md)
  - [Tax](Tax.md)
+ - [TaxCode](TaxCode.md)
  - [Transaction](Transaction.md)
  - [TransactionLine](TransactionLine.md)
  - [TrialBalanceReport](TrialBalanceReport.md)

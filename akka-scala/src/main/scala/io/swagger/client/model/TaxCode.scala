@@ -15,18 +15,13 @@ import io.swagger.client.core.ApiModel
 import org.joda.time.DateTime
 import java.util.UUID
 
-case class Tax (
+case class TaxCode (
   id: Option[Long] = None,
-  amount: Option[Double] = None,
-  `type`: Option[String] = None,
+  code: Option[String] = None,
   name: Option[String] = None,
-  description: Option[String] = None,
-  application: Option[String] = None,
   createdAt: Option[Date] = None,
-  updatedAt: Option[String] = None,
-  taxCode: Option[TaxCode] = None,
-  company: Option[Company] = None,
-  account: Option[Account] = None
+  updatedAt: Option[Date] = None,
+  company: Option[Company] = None
 ) extends ApiModel
 
 
