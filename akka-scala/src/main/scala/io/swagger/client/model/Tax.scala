@@ -17,7 +17,9 @@ import java.util.UUID
 
 case class Tax (
   id: Option[Long] = None,
-  name: Option[String] = None
+  amount: Option[Double] = None,
+  name: Option[String] = None,
+  description: Option[String] = None
 ) extends ApiModel
 
 
