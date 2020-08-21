@@ -65,24 +65,39 @@ All URIs are relative to *https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AccountApi* | **accountGet** | **GET** /account | Get an account
-*CompanyApi* | **companyPost** | **POST** /company | Add a new company to the store
-*CompanyApi* | **findPetsByStatus** | **GET** /company/id | Finds Pets by status
-*CompanyApi* | **updatePet** | **PUT** /company | Update an existing pet
+*AccountApi* | **accountsIdDelete** | **DELETE** /accounts/{id} | Delete item by id
+*AccountApi* | **accountsIdGet** | **GET** /accounts/{id} | Get element by id
+*AccountApi* | **accountsIdPut** | **PUT** /accounts/{id} | Updated item
+*AccountApi* | **accountsPost** | **POST** /accounts | Add a new item to the store
+*AccountTypeApi* | **accountTypesIdDelete** | **DELETE** /account_types/{id} | Delete item by id
+*AccountTypeApi* | **accountTypesIdGet** | **GET** /account_types/{id} | Get element by id
+*AccountTypeApi* | **accountTypesIdPut** | **PUT** /account_types/{id} | Updated item
+*AccountTypeApi* | **accountTypesPost** | **POST** /account_types | Add a new item to the store
+*CompanyApi* | **companyIdDelete** | **DELETE** /company/{id} | Delete company
+*CompanyApi* | **companyIdGet** | **GET** /company/{id} | Get element by id
+*CompanyApi* | **companyIdPut** | **PUT** /company/{id} | Updated item
+*CompanyApi* | **companyPost** | **POST** /company | Add a new item to the store
 *CountryApi* | **countryGet** | **GET** /country | Gets a list of countries
 *CountryApi* | **countryPost** | **POST** /country | Add a new company to the store
-*StoreApi* | **deleteOrder** | **DELETE** /store/order/{orderId} | Delete purchase order by ID
-*StoreApi* | **getInventory** | **GET** /store/inventory | Returns pet inventories by status
-*StoreApi* | **getOrderById** | **GET** /store/order/{orderId} | Find purchase order by ID
-*StoreApi* | **placeOrder** | **POST** /store/order | Place an order for a pet
+*FiscalYearApi* | **fiscalYearsIdDelete** | **DELETE** /fiscal_years/{id} | Delete item by id
+*FiscalYearApi* | **fiscalYearsIdGet** | **GET** /fiscal_years/{id} | Get element by id
+*FiscalYearApi* | **fiscalYearsIdPut** | **PUT** /fiscal_years/{id} | Updated item
+*FiscalYearApi* | **fiscalYearsPost** | **POST** /fiscal_years | Add a new item to the store
+*InvoiceApi* | **invoiceIdDelete** | **DELETE** /invoice/{id} | Delete item by id
+*InvoiceApi* | **invoiceIdGet** | **GET** /invoice/{id} | Get element by id
+*InvoiceApi* | **invoiceIdPut** | **PUT** /invoice/{id} | Updated item
+*InvoiceApi* | **invoicePost** | **POST** /invoice | Add a new item to the store
+*InvoiceApi* | **periodsIdDelete** | **DELETE** /periods/{id} | Delete item by id
+*InvoiceApi* | **periodsIdPut** | **PUT** /periods/{id} | Updated item
+*PartnerApi* | **partnersIdDelete** | **DELETE** /partners/{id} | Delete item by id
+*PartnerApi* | **partnersIdGet** | **GET** /partners/{id} | Get element by id
+*PartnerApi* | **partnersIdPut** | **PUT** /partners/{id} | Updated item
+*PartnerApi* | **partnersPost** | **POST** /partners | Add a new item to the store
+*PeriodApi* | **periodsIdGet** | **GET** /periods/{id} | Get element by id
+*PeriodApi* | **periodsPost** | **POST** /periods | Add a new item to the store
 *UserApi* | **createUser** | **POST** /user | Create user
-*UserApi* | **createUsersWithArrayInput** | **POST** /user/createWithArray | Creates list of users with given input array
-*UserApi* | **createUsersWithListInput** | **POST** /user/createWithList | Creates list of users with given input array
-*UserApi* | **deleteUser** | **DELETE** /user/{username} | Delete user
-*UserApi* | **getUserByName** | **GET** /user/{username} | Get user by user name
 *UserApi* | **loginUser** | **GET** /user/login | Logs user into the system
 *UserApi* | **logoutUser** | **GET** /user/logout | Logs out current logged in user session
-*UserApi* | **updateUser** | **PUT** /user/{username} | Updated user
 
 
 ## Documentation for Models
@@ -118,17 +133,15 @@ Class | Method | HTTP request | Description
  - [User](User.md)
  - [Voucher](Voucher.md)
  - [VoucherLine](VoucherLine.md)
+ - [`400Response`](`400Response`.md)
+ - [`401Response`](`401Response`.md)
+ - [`404Response`](`404Response`.md)
 
 
 ## Documentation for Authorization
 
+All endpoints do not require authorization.
 Authentication schemes defined for the API:
-### api_key
-
-- **Type**: API key
-- **API key parameter name**: api_key
-- **Location**: HTTP header
-
 
 ## Author
 

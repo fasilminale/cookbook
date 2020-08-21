@@ -34,60 +34,6 @@ object UserApi {
    * 
    * 
    * Expected answers:
-   *   code 0 :  (successful operation)
-   * 
-   * @param body List of user object
-   */
-  def createUsersWithArrayInput(body: Seq[User]): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.POST, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/user/createWithArray", "application/json")
-      .withBody(body)
-      .withDefaultSuccessResponse[Unit]
-        /**
-   * 
-   * 
-   * Expected answers:
-   *   code 0 :  (successful operation)
-   * 
-   * @param body List of user object
-   */
-  def createUsersWithListInput(body: Seq[User]): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.POST, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/user/createWithList", "application/json")
-      .withBody(body)
-      .withDefaultSuccessResponse[Unit]
-        /**
-   * This can only be done by the logged in user.
-   * 
-   * Expected answers:
-   *   code 400 :  (Invalid username supplied)
-   *   code 404 :  (User not found)
-   * 
-   * @param username The name that needs to be deleted
-   */
-  def deleteUser(username: String): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.DELETE, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/user/{username}", "application/json")
-      .withPathParam("username", username)
-      .withErrorResponse[Unit](400)
-      .withErrorResponse[Unit](404)
-        /**
-   * 
-   * 
-   * Expected answers:
-   *   code 200 : User (successful operation)
-   *   code 400 :  (Invalid username supplied)
-   *   code 404 :  (User not found)
-   * 
-   * @param username The name that needs to be fetched. Use user1 for testing.
-   */
-  def getUserByName(username: String): ApiRequest[User] =
-    ApiRequest[User](ApiMethods.GET, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/user/{username}", "application/json")
-      .withPathParam("username", username)
-      .withSuccessResponse[User](200)
-      .withErrorResponse[Unit](400)
-      .withErrorResponse[Unit](404)
-        /**
-   * 
-   * 
-   * Expected answers:
    *   code 200 : String (successful operation)
    *              Headers :
    *                X-Rate-Limit - calls per hour allowed by the user
@@ -117,22 +63,6 @@ object UserApi {
   def logoutUser(): ApiRequest[Unit] =
     ApiRequest[Unit](ApiMethods.GET, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/user/logout", "application/json")
       .withDefaultSuccessResponse[Unit]
-        /**
-   * This can only be done by the logged in user.
-   * 
-   * Expected answers:
-   *   code 400 :  (Invalid user supplied)
-   *   code 404 :  (User not found)
-   * 
-   * @param username name that need to be updated
-   * @param body Updated user object
-   */
-  def updateUser(username: String, body: User): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.PUT, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/user/{username}", "application/json")
-      .withBody(body)
-      .withPathParam("username", username)
-      .withErrorResponse[Unit](400)
-      .withErrorResponse[Unit](404)
       
 
 }

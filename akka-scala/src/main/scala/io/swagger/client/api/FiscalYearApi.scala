@@ -16,7 +16,7 @@ import io.swagger.client.core._
 import io.swagger.client.core.CollectionFormats._
 import io.swagger.client.core.ApiKeyLocations._
 
-object CompanyApi {
+object FiscalYearApi {
 
   /**
    * This can only be done by the logged in user.
@@ -27,8 +27,8 @@ object CompanyApi {
    * 
    * @param id The id that needs to be deleted
    */
-  def companyIdDelete(id: String): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.DELETE, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/company/{id}", "application/json")
+  def fiscalYearsIdDelete(id: String): ApiRequest[Unit] =
+    ApiRequest[Unit](ApiMethods.DELETE, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/fiscal_years/{id}", "application/json")
       .withPathParam("id", id)
       .withErrorResponse[Unit](400)
       .withErrorResponse[Unit](404)
@@ -42,8 +42,8 @@ object CompanyApi {
    * 
    * @param id The name that needs to be fetched.
    */
-  def companyIdGet(id: String): ApiRequest[Company] =
-    ApiRequest[Company](ApiMethods.GET, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/company/{id}", "application/json")
+  def fiscalYearsIdGet(id: String): ApiRequest[Company] =
+    ApiRequest[Company](ApiMethods.GET, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/fiscal_years/{id}", "application/json")
       .withPathParam("id", id)
       .withSuccessResponse[Company](200)
       .withErrorResponse[Unit](400)
@@ -58,8 +58,8 @@ object CompanyApi {
    * @param id 
    * @param body Updated user object
    */
-  def companyIdPut(id: String, body: Company): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.PUT, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/company/{id}", "application/json")
+  def fiscalYearsIdPut(id: String, body: Company): ApiRequest[Unit] =
+    ApiRequest[Unit](ApiMethods.PUT, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/fiscal_years/{id}", "application/json")
       .withBody(body)
       .withPathParam("id", id)
       .withErrorResponse[Unit](400)
@@ -72,8 +72,8 @@ object CompanyApi {
    * 
    * @param body object that needs to be added to the store
    */
-  def companyPost(body: Option[Company] = None): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.POST, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/company", "application/json")
+  def fiscalYearsPost(body: Option[Company] = None): ApiRequest[Unit] =
+    ApiRequest[Unit](ApiMethods.POST, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/fiscal_years", "application/json")
       .withBody(body)
       .withErrorResponse[Unit](405)
       
