@@ -26,7 +26,7 @@ object CountryApi {
    * 
    * @param body company object that needs to be added to the store
    */
-  def countryPost(body: Company): ApiRequest[Unit] =
+  def addPet(body: Company): ApiRequest[Unit] =
     ApiRequest[Unit](ApiMethods.POST, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/country", "application/json")
       .withBody(body)
       .withErrorResponse[Unit](405)

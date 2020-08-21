@@ -26,7 +26,7 @@ object CompanyApi {
    * 
    * @param body company object that needs to be added to the store
    */
-  def companyPost(body: Option[Company] = None): ApiRequest[Unit] =
+  def companyPost(body: Company): ApiRequest[Unit] =
     ApiRequest[Unit](ApiMethods.POST, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/company", "application/json")
       .withBody(body)
       .withErrorResponse[Unit](405)

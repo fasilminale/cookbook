@@ -69,7 +69,7 @@ Class | Method | HTTP request | Description
 *CompanyApi* | **companyPost** | **POST** /company | Add a new company to the store
 *CompanyApi* | **findPetsByStatus** | **GET** /company/id | Finds Pets by status
 *CompanyApi* | **updatePet** | **PUT** /company | Update an existing pet
-*CountryApi* | **countryPost** | **POST** /country | Add a new company to the store
+*CountryApi* | **addPet** | **POST** /country | Add a new company to the store
 *StoreApi* | **deleteOrder** | **DELETE** /store/order/{orderId} | Delete purchase order by ID
 *StoreApi* | **getInventory** | **GET** /store/inventory | Returns pet inventories by status
 *StoreApi* | **getOrderById** | **GET** /store/order/{orderId} | Find purchase order by ID
