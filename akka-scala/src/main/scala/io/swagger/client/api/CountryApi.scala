@@ -22,11 +22,20 @@ object CountryApi {
    * 
    * 
    * Expected answers:
+   *   code 200 : Seq[Company] (successful operation)
+   */
+  def countryGet(): ApiRequest[Seq[Company]] =
+    ApiRequest[Seq[Company]](ApiMethods.GET, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/country", "application/json")
+      .withSuccessResponse[Seq[Company]](200)
+        /**
+   * 
+   * 
+   * Expected answers:
    *   code 405 :  (Invalid input)
    * 
    * @param body company object that needs to be added to the store
    */
-  def addPet(body: Company): ApiRequest[Unit] =
+  def countryPost(body: Company): ApiRequest[Unit] =
     ApiRequest[Unit](ApiMethods.POST, "https://virtserver.swaggerhub.com/I3516/Sparta/1.0.0", "/country", "application/json")
       .withBody(body)
       .withErrorResponse[Unit](405)
