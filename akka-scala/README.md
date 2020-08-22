@@ -85,6 +85,10 @@ Class | Method | HTTP request | Description
 *BankApi* | **banksIdGet** | **GET** /banks/{id} | Get element by id
 *BankApi* | **banksIdPut** | **PUT** /banks/{id} | Updated item
 *BankApi* | **banksPost** | **POST** /banks | Add a new item to the store
+*BankStatementApi* | **bankStatementsIdDelete** | **DELETE** /bank_statements/{id} | Delete item by id
+*BankStatementApi* | **bankStatementsIdGet** | **GET** /bank_statements/{id} | Get element by id
+*BankStatementApi* | **bankStatementsIdPut** | **PUT** /bank_statements/{id} | Updated item
+*BankStatementApi* | **bankStatementsPost** | **POST** /bank_statements | Add a new item to the store
 *CompanyApi* | **companyIdDelete** | **DELETE** /company/{id} | Delete company
 *CompanyApi* | **companyIdGet** | **GET** /company/{id} | Get element by id
 *CompanyApi* | **companyIdPut** | **PUT** /company/{id} | Updated item
@@ -99,6 +103,10 @@ Class | Method | HTTP request | Description
 *CurrencyRateApi* | **currencyRatesIdGet** | **GET** /currency_rates/{id} | Get element by id
 *CurrencyRateApi* | **currencyRatesIdPut** | **PUT** /currency_rates/{id} | Updated item
 *CurrencyRateApi* | **currencyRatesPost** | **POST** /currency_rates | Add a new item to the store
+*DepreciationLineApi* | **depreciationLinesIdDelete** | **DELETE** /depreciation_lines/{id} | Delete item by id
+*DepreciationLineApi* | **depreciationLinesIdGet** | **GET** /depreciation_lines/{id} | Get element by id
+*DepreciationLineApi* | **depreciationLinesIdPut** | **PUT** /depreciation_lines/{id} | Updated item
+*DepreciationLineApi* | **depreciationLinesPost** | **POST** /depreciation_lines | Add a new item to the store
 *FiscalYearApi* | **fiscalYearsIdDelete** | **DELETE** /fiscal_years/{id} | Delete item by id
 *FiscalYearApi* | **fiscalYearsIdGet** | **GET** /fiscal_years/{id} | Get element by id
 *FiscalYearApi* | **fiscalYearsIdPut** | **PUT** /fiscal_years/{id} | Updated item
@@ -123,6 +131,14 @@ Class | Method | HTTP request | Description
 *StateApi* | **statesIdGet** | **GET** /states/{id} | Get element by id
 *StateApi* | **statesIdPut** | **PUT** /states/{id} | Updated item
 *StateApi* | **statesPost** | **POST** /states | Add a new item to the store
+*TaxApi* | **taxsIdDelete** | **DELETE** /taxs/{id} | Delete item by id
+*TaxApi* | **taxsIdGet** | **GET** /taxs/{id} | Get element by id
+*TaxApi* | **taxsIdPut** | **PUT** /taxs/{id} | Updated item
+*TaxApi* | **taxsPost** | **POST** /taxs | Add a new item to the store
+*TaxCodeApi* | **taxCodesIdDelete** | **DELETE** /tax_codes/{id} | Delete item by id
+*TaxCodeApi* | **taxCodesIdGet** | **GET** /tax_codes/{id} | Get element by id
+*TaxCodeApi* | **taxCodesIdPut** | **PUT** /tax_codes/{id} | Updated item
+*TaxCodeApi* | **taxCodesPost** | **POST** /tax_codes | Add a new item to the store
 *TransactionApi* | **transactionsIdDelete** | **DELETE** /transactions/{id} | Delete item by id
 *TransactionApi* | **transactionsIdGet** | **GET** /transactions/{id} | Get element by id
 *TransactionApi* | **transactionsIdPut** | **PUT** /transactions/{id} | Updated item
